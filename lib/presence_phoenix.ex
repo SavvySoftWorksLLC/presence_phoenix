@@ -14,6 +14,9 @@ defmodule PresencePhoenix do
       supervisor(PresencePhoenix.Endpoint, []),
       # Start your own worker by calling: PresencePhoenix.Worker.start_link(arg1, arg2, arg3)
       # worker(PresencePhoenix.Worker, [arg1, arg2, arg3]),
+
+      # presence
+      supervisor(PresencePhoenix.Presence, []),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
